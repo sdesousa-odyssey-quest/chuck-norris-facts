@@ -16,4 +16,10 @@ function fetchChuckNorrisFactJSON() {
         });
 }
 
+let elementDel = document.getElementById('reload');
+elementDel.addEventListener('click', function() {
+    fetchChuckNorrisFactJSON();
+});
+
 fetchChuckNorrisFactJSON();
+
